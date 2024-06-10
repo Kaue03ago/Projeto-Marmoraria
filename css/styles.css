@@ -1,0 +1,576 @@
+/* Define a aparência do corpo da página */
+body {
+    font-family: 'Times New Roman',Times, serif; /* Aplica a fonte Roboto */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a borda superior */
+.top-bar {
+    background-color: #c6ac2a; /* Cor de fundo da borda superior */
+    color: #ffffff; /* Cor do texto */
+    padding: 0.5px ; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+    font-size: 14px; /* Tamanho da fonte */
+    width: 100%; /* Garante que a borda ocupe toda a largura da página */
+    position: fixed; /* Fixa a borda no topo da página */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    z-index: 1000; /* Garante que a borda fique acima de outros elementos */
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header {
+    background-color: #000000; /* Altera a cor de fundo para preto */
+    padding: 10px 0; /* Adiciona um espaçamento interno */
+}
+
+.tituloInit {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+    text-align:center;
+    /* margin-bottom: 10px; */
+    margin-top: 30px;
+    margin-left: 310px;
+}
+
+/* Estiliza as sessões */
+section {
+    background-color: #000000; /* Altera a cor de fundo para preto */
+    padding: 20px 0; /* Adiciona um espaçamento interno */
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #000000; /* Altera a cor de fundo para preto */
+    padding: 10px 0; /* Adiciona um espaçamento interno */
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/* Estiliza o título dentro do cabeçalho */
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    text-align: center; /* Centraliza o título */
+    display: inline-block; /* Permite que o título se ajuste ao tamanho do texto */
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+}
+nav {
+    vertical-align: center;
+    margin-top: 10px;
+}
+/* Estiliza a navegação e os links */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove a margem esquerda do primeiro item */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 50px;
+    
+}
+
+/* Define a seção de destaque com imagem de fundo */
+.hero {
+    background: url('../image/escuro.jpeg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    margin: 0; /* Remove qualquer margem extra */
+}
+
+/* Define a seção de serviços com fundo sobreposto */
+.servicos {
+    background: rgb(201, 176, 35); /* Fundo branco com opacidade */
+    padding: 40px 20px; /* Preenchimento interno */
+    position: relative; /* Define a posição relativa para sobreposição */
+    z-index: 1; /* Define a camada acima do fundo */
+    margin-top: -50px; /* Ajusta a margem superior para sobrepor a imagem acima */
+    border-radius: 100px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+
+/* Estiliza os serviços individuais dentro da seção de serviços */
+.servicos .container {
+    display:flexbox;
+    justify-content:end;
+    flex-wrap: wrap;
+}
+
+
+
+.servico-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servico {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Estiliza a seção sobre */
+.sobre {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sobre p {
+    text-align:left; 
+    margin: 0 auto;
+    max-width: 800px;
+    
+}
+
+.sobre p1 {
+    text-align:center; 
+    margin: 0 auto;
+    max-width: 800px;
+    
+}
+
+/* Estiliza a seção de produtos */
+.produtos {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.produtos .container {
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #a2a2a2;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+/* --------------------------------------------------------------------------------------------- */
+/* Define a aparência do corpo da página */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Aplica a fonte Times New Roman */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a borda superior */
+.top-bar {
+    background-color: #c6ac2a; /* Cor de fundo da borda superior */
+    color: #ffffff; /* Cor do texto */
+    padding: 0.5px ; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+    font-size: 14px; /* Tamanho da fonte */
+    width: 100%; /* Garante que a borda ocupe toda a largura da página */
+    position: fixed; /* Fixa a borda no topo da página */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    z-index: 1000; /* Garante que a borda fique acima de outros elementos */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #000000; /* Altera a cor de fundo para preto */
+    padding: 10px 0; /* Adiciona um espaçamento interno */
+}
+
+.titulo {
+    color: #c6ac2a;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 310px;
+}
+
+/* Estiliza as sessões */
+section {
+    background-color: #000000; /* Altera a cor de fundo para preto */
+    padding: 20px 0; /* Adiciona um espaçamento interno */
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #000000; /* Altera a cor de fundo para preto */
+    padding: 10px 0; /* Adiciona um espaçamento interno */
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Estiliza o título dentro do cabeçalho */
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    text-align: center; /* Centraliza o título */
+    display: inline-block; /* Permite que o título se ajuste ao tamanho do texto */
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+}
+
+nav {
+    vertical-align: center;
+    margin-top: 10px;
+}
+
+/* Estiliza a navegação e os links */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove a margem esquerda do primeiro item */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+/* Define a seção de destaque com imagem de fundo */
+.hero {
+    background: url('../image/escuro.jpeg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    margin: 0; /* Remove qualquer margem extra */
+}
+
+/* Define a seção de serviços com fundo sobreposto */
+.servicos {
+    background: rgb(201, 176, 35); /* Fundo branco com opacidade */
+    padding: 40px 20px; /* Preenchimento interno */
+    position: relative; /* Define a posição relativa para sobreposição */
+    z-index: 1; /* Define a camada acima do fundo */
+    margin-top: -50px; /* Ajusta a margem superior para sobrepor a imagem acima */
+    border-radius: 100px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+
+/* Estiliza os serviços individuais dentro da seção de serviços */
+.servicos .container {
+    display: flexbox;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.servico-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servico {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Estiliza a seção sobre */
+.sobre {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sobre p {
+    text-align: left; 
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.sobre p1 {
+    text-align: center; 
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Estiliza a seção de produtos */
+.produtos {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.produtos .container {
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+/* Estiliza a seção do catálogo */
+.catalogo {
+    padding: 40px 20px;
+    background-color: #ababab; /* Mesma cor de fundo que a seção inicial */
+    text-align: center;
+}
+
+.catalogo .container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalogo h2 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+    color: #c6ac2a;
+    position: relative;
+    top: -40px;
+}
+
+.catalogo .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.catalogo .produto {
+    width: 22%; /* Quatro produtos por linha */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0
+}
+.introducao {
+    background-color: #ababab; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 0px; /* Margem inferior */
+    text-align: center; /* Alinhamento centralizado */
+}
+
+.introducao h2 {
+    color: #ffffff; /* Cor do título */
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 10px; /* Margem inferior do título */
+}
+
+.introducao p {
+    color: #000000; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    margin: 0; /* Remover margens */
+    text-align:left /* Alinhamento justificado */
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif; /* Aplica a fonte Times New Roman */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    background-color: #c6ac2a; /* Cor de fundo da borda superior */
+    color: #ffffff; /* Cor do texto */
+    padding: 0.5px ; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+    font-size: 14px; /* Tamanho da fonte */
+    width: 100%; /* Garante que a borda ocupe toda a largura da página */
+    position: fixed; /* Fixa a borda no topo da página */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    z-index: 1000; /* Garante que a borda fique acima de outros elementos */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #000000; /* Altera a cor de fundo para preto */
+    padding: 10px 0; /* Adiciona um espaçamento interno */
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 45
+    0px;
+}
+
+/* Estiliza as sessões */
+section {
+    background-color: #ababab; /* Altera a cor de fundo para preto */
+    padding: 20px 0; /* Adiciona um espaçamento interno */
+}
+
+footer {
+    background-color: #000000; /* Altera a cor de fundo para preto */
+    padding: 10px 0; /* Adiciona um espaçamento interno */
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    text-align: center; /* Centraliza o título */
+    display: inline-block; /* Permite que o título se ajuste ao tamanho do texto */
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+}
+
+nav {
+    vertical-align: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove a margem esquerda do primeiro item */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+/* 
+body h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    /* margin-top: 30px; */
+    /* margin-left: 310px; */
+.intro {
+    padding: 40px 20px;
+    background: url('../image/fundocerto.jpeg') no-repeat center center/cover;
+    text-align: center; /* Alinhamento centralizado */
+}
+    
+.intro .subtitulo {
+        max-width: 800px; /* Largura máxima para centralizar */
+        margin: 0 auto; /* Margens automáticas para centralização */
+    }
+    
+    .intro .subtitulo h2 {
+        color: #ffffff; /* Cor do título */
+        font-size: 28px; /* Tamanho do título */
+        margin-bottom: 20px; /* Margem inferior do título */
+    }
+    
+    .intro .subtitulo p {
+        color: #ffffff; /* Cor do texto */
+        font-size: 18px; /* Tamanho do texto */
+        margin: 0 auto; /* Margens automáticas para centralização */
+        max-width: 800px; /* Largura máxima para centralizar o texto */
+        text-align: center; /* Alinhamento do texto centralizado */
+    } 
+
+/* .catalogo h2 {
+    text-align: center;
+    margin-bottom:
+} */
