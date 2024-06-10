@@ -12,7 +12,7 @@ body {
     color: #ffffff; /* Cor do texto */
     padding: 0.5px ; /* Preenchimento interno */
     text-align: center; /* Centraliza o texto */
-    font-size: 14px; /* Tamanho da fonte */
+    font-size: 1px; /* Tamanho da fonte */
     width: 100%; /* Garante que a borda ocupe toda a largura da página */
     position: fixed; /* Fixa a borda no topo da página */
     top: 0; /* Alinha no topo */
@@ -156,9 +156,16 @@ nav ul li a {
     
 }
 
-.sobre p1 {
+.sobre .sub {
+    text-align:left; 
+    margin-top: 10px;
+    max-width: 800px;
+    
+}
+
+.sobre .espaco {
     text-align:center; 
-    margin: 0 auto;
+    margin-top: 20px;
     max-width: 800px;
     
 }
@@ -197,6 +204,36 @@ footer {
     text-align: center;
     color: #fff;
 }
+
+
+/* Estiliza a seção de servicos exemplo */
+.servicosIMG {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.servicosIMG .containerServicos {
+    text-align: center;
+}
+
+.galeriaServicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px; /* Adiciona um espaço entre as linhas */
+}
+
+.galeriaServicos .servico {
+    flex: 0 1 calc(33% - 30px); /* Duas imagens por linha, com margem */
+    margin: 10px;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.servico img {
+    width: 100%; /* A imagem ocupará 100% da largura da div pai */
+    height: auto; /* Altura automática para manter a proporção */
+    max-width: 250px; /* Define a largura máxima da imagem */
+}
 /* --------------------------------------------------------------------------------------------- */
 /* Define a aparência do corpo da página */
 body {
@@ -208,7 +245,7 @@ body {
 
 /* Define a borda superior */
 .top-bar {
-    background-color: #c6ac2a; /* Cor de fundo da borda superior */
+    background-color: #9a872d; /* Cor de fundo da borda superior */
     color: #ffffff; /* Cor do texto */
     padding: 0.5px ; /* Preenchimento interno */
     text-align: center; /* Centraliza o texto */
@@ -351,12 +388,6 @@ nav ul li a {
     max-width: 800px;
 }
 
-.sobre p1 {
-    text-align: center; 
-    margin: 0 auto;
-    max-width: 800px;
-}
-
 /* Estiliza a seção de produtos */
 .produtos {
     background-color: #f9f9f9;
@@ -453,11 +484,11 @@ body {
 }
 
 .top-bar {
-    background-color: #c6ac2a; /* Cor de fundo da borda superior */
+    background-color: #9a872d; /* Cor de fundo da borda superior */
     color: #ffffff; /* Cor do texto */
     padding: 0.5px ; /* Preenchimento interno */
     text-align: center; /* Centraliza o texto */
-    font-size: 14px; /* Tamanho da fonte */
+    font-size: 12px; /* Tamanho da fonte */
     width: 100%; /* Garante que a borda ocupe toda a largura da página */
     position: fixed; /* Fixa a borda no topo da página */
     top: 0; /* Alinha no topo */
