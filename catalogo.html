@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,23 @@
     <!-- Link para o arquivo CSS -->
 
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!-- Importa a fonte Roboto do Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
+
 <body>
-    
+
     <!-- Cabeçalho da página -->
     <header>
-    
+
         <!-- Borda Superior -->
-    <div class="top-bar">
-    
-        <!-- Informações adicionais aqui -->
-        <p>Contato: (11) xxxx-xxxx | Whatsapp: (11) xxxxx-xxxx</p>
-    </div>
+        <div class="top-bar">
+
+            <!-- Informações adicionais aqui -->
+            <p>Contato: (11) xxxx-xxxx | Whatsapp: (15) 99789-7769</p>
+            
+        </div>
 
 
         <div class="container">
@@ -33,21 +36,21 @@
             </a>
 
             <!-- Título da Marmoraria -->
-            <h1 class = "tituloInit">D&R Marmoraria</h1>
+            <h1 class="tituloInit">D&R Marmoraria</h1>
             <!-- Navegação principal -->
             <nav>
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="catalogo.html">Catálogo de Pedras</a></li>
                     <li><a href="quemSomos.html">Quem somos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <!-- <li><a href="#">Contato</a></li> -->
                 </ul>
                 <a href="https://www.instagram.com/drmarmorese/" target="_blank" class="instagram-link">
                     <img src="image/icons/icon-insta.png" alt="Instagram" class="instagram-icon">
-                </a> 
+                </a>
             </nav>
         </div>
-                <!-- Ícone do WhatsApp -->
+        <!-- Ícone do WhatsApp -->
         <a href="https://api.whatsapp.com/send?phone=5511934921307" target="_blank" class="whatsapp-link">
             <img src="image/icons/icon-whats.png" alt="WhatsApp" class="whatsapp-icon">
         </a>
@@ -216,9 +219,25 @@
     </main>
     
     <!-- Rodapé da página -->
-    <footer>
+    <div class="footer-container">
+        <div class="info-container">
+            <h3>Informações</h3>
+            <p>Endereço: Estr. Maria Dolores Piaia Lorato, 2683 - Chácaras São Domingos, Sorocaba - SP, 18017-366</p>
+            <p>Telefone: (15) 99789-7769</p>
+            <p>Email: contato@ddmarmoraria.com</p>
+        </div>
+        <div class="map-container">
+            <h3>Localização</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6189762622644!2d-47.408929787752726!3d-23.51022977874659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf612614c2b0f3%3A0xa2d5468e48bc51a8!2sEstr.%20Maria%20Dolores%20Piaia%20Lorato%2C%202683%20-%20Chácaras%20São%20Domingos%2C%20Sorocaba%20-%20SP%2C%2018017-366!5e0!3m2!1spt-BR!2sbr!4v1719575729103!5m2!1spt-BR!2sbr"
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
         <p>&copy; 2024 Marmoraria DDI</p>
-    </footer>
+    </div>
     <!-- Link para o arquivo JavaScript -->
     <script src="js/scripts.js"></script>
 </body>
