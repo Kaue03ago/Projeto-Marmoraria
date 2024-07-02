@@ -287,7 +287,7 @@ nav ul li a {
 
 .produtos h2 {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -718,5 +718,11 @@ body h2 {
             text-align: center;
             /* Centraliza o título */
         }
+
+        
+        .produtos h2 {
+            font-size: 16px;
+            text-align:left;
+        }   
 
     }
