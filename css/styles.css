@@ -271,7 +271,11 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 20px;
+    
 }
+
+
 
 
 .produto {
@@ -453,17 +457,6 @@ section {
     padding: 20px 0;
     /* Adiciona um espaçamento interno */
 }
-
-
-
-/* 
-body h2 {
-    color: #ffffff;
-    font-size: 24px;
-    margin: 0;
-    text-align: center;
-    /* margin-top: 30px; */
-/* margin-left: 310px; */
 .intro {
     padding: 40px 20px;
     background: url('../image/servicos/fundocerto.jpeg') no-repeat center center/cover;
@@ -548,6 +541,81 @@ body h2 {
     color: #fff;
     margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos quem somos  */
+
+
+.heroQuemSomos {
+    background: url('../image/servicos/fabricando.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    /* Remove qualquer margem extra */
+}
+
+/* ajustando as imagens em 3x3 fixo */
+.galeria .produto {
+    flex: 0 1 calc(33% - 50px);
+    margin: 10px;
+    text-align: center;
+}
+
+.produtosQM {
+
+    background-image: url('../image/laminas/laminaPreta.jpg');
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    padding: 40px 20px;
+    color: #fff;
+    /* Ajuste a cor do texto se necessário para melhor contraste */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
