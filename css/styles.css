@@ -82,14 +82,15 @@ header {
 
 
 .instagram-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.instagram-link {
     position: fixed;
-    top: -3px;
+    bottom: 20px;
     /* Ajuste conforme necessário */
-    right: -4px;
-    /* Ajuste conforme necessário */
-    width: 37px;
-    /* Ajuste conforme necessário */
-    height: 37px;
+    right: 80px;
     /* Ajuste conforme necessário */
     z-index: 1000;
     /* Garante que a imagem fique sobre outros elementos */
@@ -394,19 +395,21 @@ nav ul li a {
 
 .catalogo .galeria {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
 
 .catalogo .produto {
-    width: 100%;
+    width: 100px;
     /* Quatro produtos por linha */
     background-color: #ffffff;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    /* Centraliza o texto dentro de cada produto */
+    text-align: center;    /* Centraliza o texto dentro de cada produto */
+    box-sizing: border-box;  /* Inclui padding e border na largura */
+
 }
 
 
@@ -705,14 +708,19 @@ section {
             height: 30px;
         }
 
+        .instagram-link {
+            bottom: 15px;
+            right: 50px;
+        }
+
         .whatsapp-link {
             bottom: 15px;
             right: 15px;
         }
 
         .whatsapp-icon {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
         }
 
         header nav {
@@ -828,4 +836,13 @@ section {
             text-align:left;
         }   
 
+        .produto {
+            width: 90px;  /* Reduzindo a largura do box */
+            padding: 8px;
+            margin: 8px;
+        }
+
+        .catalogo .produto {
+            width: 30px;  /* Aumenta o tamanho dos quadrados em tablets */
+        }    
     }
