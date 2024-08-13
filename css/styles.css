@@ -1,6 +1,6 @@
 /* Define a aparência do corpo da página */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Bebas Neue', sans-serif;
     /* Aplica a fonte Roboto */
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 /* Define a borda superior */
 
 .top-bar {
-    background-color: #9a872d;
+    background-color:  rgb(201, 176, 35);
     /* Cor de fundo da borda superior */
     color: #ffffff;
     /* Cor do texto */
@@ -53,12 +53,12 @@ header {
     text-align: center;
     /* margin-bottom: 10px; */
     margin-top: 30px;
-    margin-left: 360px;
+    margin-left: 300px;
 }
 
 .logo-link {
     position: relative;
-    top: 1px;
+    top: 4px;
     /* Ajuste conforme necessário */
     left: 20px;
     /* Ajuste conforme necessário */
@@ -69,9 +69,9 @@ header {
 }
 
 .logo-img {
-    width: 60px;
+    width: 52px;
     /* Ajuste conforme necessário */
-    height: 45px;
+    height: 37px;
     /* Ajuste conforme necessário */
     position: relative;
     top: -8px;
@@ -83,13 +83,13 @@ header {
 
 .instagram-icon {
     position: fixed;
-    top: -5px;
+    top: -3px;
     /* Ajuste conforme necessário */
-    right: 10px;
+    right: -4px;
     /* Ajuste conforme necessário */
-    width: 40px;
+    width: 37px;
     /* Ajuste conforme necessário */
-    height: 40px;
+    height: 37px;
     /* Ajuste conforme necessário */
     z-index: 1000;
     /* Garante que a imagem fique sobre outros elementos */
@@ -135,10 +135,11 @@ header h1 {
 /* Estiliza a navegação e os links */
 
 nav {
-    vertical-align: center;
+    align-items: center;
     margin-top: 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+
 }
 
 nav ul {
@@ -150,7 +151,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    margin-top: 20px; /* Adiciona espaço acima dos subtítulos */
     margin-right: 20px;
 }
 
@@ -277,7 +278,6 @@ nav ul li a {
 
 
 
-
 .produto {
     flex: 1 1 200px;
     margin: 10px;
@@ -287,6 +287,9 @@ nav ul li a {
     width: 100%;
     height: auto;
     max-width: 150px;
+    object-fit: cover;
+    aspect-ratio: 1/1; /* Para garantir que as imagens sejam quadradas */
+    border-radius: 10px; /* Mantém os cantos arredondados */
 }
 
 .produtos h2 {
@@ -308,7 +311,7 @@ nav ul li a {
 }
 
 .servicosIMG {
-    background: rgb(218, 197, 81);
+    background: rgb(248, 233, 144);
     /* Fundo branco com opacidade */
     padding: 40px 20px;
     /* Preenchimento interno */
@@ -351,12 +354,15 @@ nav ul li a {
     /* Altura automática para manter a proporção */
     max-width: 250px;
     /* Define a largura máxima da imagem */
+        border-radius: 10px; /* Mantém os cantos arredondados */
+
 }
 
 /* --------------------------------------------------------------------------------------------- */
 
 /* Estiliza a seção do catálogo */
 .catalogo {
+    margin-top: 20px; /* Adiciona 20px de espaço acima do elemento */
     padding: 40px 20px;
     background-color: #ababab;
     /* Mesma cor de fundo que a seção inicial */
@@ -405,37 +411,39 @@ nav ul li a {
 
 
 .introducao {
-    background-color: #ababab;
-    /* Cor de fundo */
-    padding: 20px;
-    /* Espaçamento interno */
-    margin-bottom: 0px;
-    /* Margem inferior */
-    text-align: center;
-    /* Alinhamento centralizado */
-    margin: 0 auto;
 
+    background-color: #ababab; /* Cor de fundo do contêiner da introdução */
+    padding: 20px; /* Espaçamento interno em volta do conteúdo */
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+    max-width: 1000px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    border-radius: 10px; /* Bordas arredondadas para o contêiner */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave ao contêiner */
+    padding-bottom: 30px; /* Espaço adicional no fundo */
 }
 
 .introducao h2 {
-    color: #000000;
-    /* Cor do título */
-    font-size: 24px;
-    /* Tamanho do título */
-    margin-bottom: 10px;
-    /* Margem inferior do título */
+    color: #000000; /* Cor do texto do título */
+    font-size: 28px; /* Tamanho da fonte do título */
+    font-weight: bold; /* Deixa o título em negrito */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    text-transform: uppercase; /* Transforma o texto do título em letras maiúsculas */
 }
 
-.introducao .teste {
-    color: #ffffff;
-    /* Cor do texto */
-    font-size: 16px;
-    /* Tamanho do texto */
-    margin: 0 350px;
-    /* Remover margens */
-    text-align: justify;
-    display: inline-block;
+.introducao .texto {
+    color:  #000000; /* Cor do texto do parágrafo */
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+    line-height: 1.6; /* Espaçamento entre as linhas do texto */
+    margin: 0 50px; /* Margens laterais para o texto */
+    text-align: justify; /* Alinhamento justificado para o texto */
+    max-width: 800px; /* Largura máxima do texto para mantê-lo legível */
+    margin: 0 auto; /* Centraliza o texto dentro do contêiner */
+    display: block; /* Garante que o texto ocupe todo o espaço disponível */
+    padding: 10px; /* Espaçamento interno para o texto */
+    background-color: #e7db82; /* Cor de fundo do texto */
+    border-radius: 5px; /* Bordas arredondadas para o fundo do texto */
 }
+
 
 /* ----------------------------------------------------------------------------------------------------- */
 
@@ -571,11 +579,38 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #000000;
-    text-align: center;
+    position: relative; /* Para posicionar a camada de sobreposição */
     margin: 0;
-    /* Remove qualquer margem extra */
+    text-align: 
+    center;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    z-index: 1; /* Garantir que o texto fique acima da sobreposição */
+}
+
+.hero-content {
+    position: relative; /* Para garantir que o texto fique acima da camada de sobreposição */
+    z-index: 2;
+    color: #ffffff; /* Cor do texto branco para contraste */
+    padding: 20px; /* Espaçamento interno para o texto */
+}
+
+.hero-title {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem; /* Tamanho da fonte do subtítulo */
+}
+
 
 /* ajustando as imagens em 3x3 fixo */
 .galeria .produto {
